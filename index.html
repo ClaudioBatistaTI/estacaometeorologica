@@ -10,25 +10,61 @@
     </head>
     <body>
         <header>
+
             <h1>🌦️ Estação Meteorológica IoT</h1>
             <p>
                 Monitoramento ambiental em tempo real
             </p>
         </header>
         <main>
+            <p>
+                Monitoramento ambiental em tempo real
+            </p>
+        </header>
+        <main>
+            <section class="dashboard">
+                <div class="card">
+                    <div class="icon">                    🌡️
+                    </div>
+                    <h2>Temperatura</h2>
+                    <div id="temperatura">
+                        -- °C
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="icon">
+                        💧
+                    </div>
+                    <h2>Umidade</h2>
+                    <div id="umidade">
+                        -- %
+                    </div>
+                </div>
+            </section>
+            <section class="status">
+                <p>
+                    Status:
+                    <strong id="status">
+                        Conectando...
+                    </strong>
+                </p>
+                <p id="atualizacao">
+                    Aguardando dados...
+                </p>
+            </section>
             <h1>Gráfico de Temperatura</h1>
-            <h2>Estação Meteorológica</h2>              
+                       
            
 
             <iframe width="450" height="260" style="border: 1px solid #cccccc;" src="https://thingspeak.com/channels/3456165/charts/1?bgcolor=%23ffffff&color=%23d62020&dynamic=true&results=60&type=line&xaxis=Hora&yaxis=temperatura"></iframe>
 
-            
+
         </main>
         <footer>
             <p>
                 Projeto IoT — ESP8266 + DHT22
             </p>
         </footer>
-        <script src="script.js"></script>
+        <script src="scripts.js"></script>
     </body>
 </html>
