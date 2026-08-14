@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport"
+            content="width=device-width, initial-scale=1.0">
+        <title>Estação Meteorológica IoT</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <header>
+            <h1>🌦️ Estação Meteorológica IoT</h1>
+            <p>
+                Monitoramento ambiental em tempo real
+            </p>
+        </header>
+        <main>
+            <section class="dashboard">
+                <div class="card">
+                    <div class="icon">                    🌡️
+                    </div>
+                    <h2>Temperatura</h2>
+                    <div id="temperatura">
+                        -- °C
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="icon">
+                        💧
+                    </div>
+                    <h2>Umidade</h2>
+                    <div id="umidade">
+                        -- %
+                    </div>
+                </div>
+            </section>
+            <section class="status">
+                <p>
+                    Status:
+                    <strong id="status">
+                        Conectando...
+                    </strong>
+                </p>
+                <p id="atualizacao">
+                    Aguardando dados...
+                </p>
+            </section>
+        </main>
+        <footer>
+            <p>
+                Projeto IoT — ESP8266 + DHT22
+            </p>
+        </footer>
+        <script src="script.js"></script>
+    </body>
+</html>
